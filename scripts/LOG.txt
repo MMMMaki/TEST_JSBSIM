@@ -1,0 +1,646 @@
+(lag_env) D:\JSBSIM\LAG-master\LAG-master\scripts>sh ./train_vsbaselineV1.sh
+env is SingleCombat, scenario is 1v1/ShootMissile/vsBaseline, algo is ppo, exp is v3, seed is 1
+choose to use cpu...
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from C:\Users\4090炼丹炉\.netrc.
+wandb: Network error (ProxyError), entering retry loop.
+wandb: W&B API key is configured. Use `wandb login --relogin` to force relogin
+wandb: Network error (ProxyError), entering retry loop.
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: Tracking run with wandb version 0.24.2
+wandb: Run data is saved locally in D:\JSBSIM\LAG-master\LAG-master\scripts\results\SingleCombat\1v1\ShootMissile\vsBaseline\ppo\v3\wandb\run-20260410_125606-cwy3pj96
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run v3_seed1
+wandb:  View project at https://wandb.ai/635067877-xidian-university/SingleCombat
+wandb:  View run at https://wandb.ai/635067877-xidian-university/SingleCombat/runs/cwy3pj96
+Process Process-1:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-2:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-3:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\connection.py", line 312, in _recv_bytes
+    nread, err = ov.GetOverlappedResult(True)
+BrokenPipeError: [WinError 109] 管道已结束。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train/train_jsbsim.py", line 176, in <module>
+    main(sys.argv[1:])
+  File "train/train_jsbsim.py", line 139, in main
+    envs = make_train_env(all_args)
+  File "train/train_jsbsim.py", line 44, in make_train_env
+    return SubprocVecEnv([get_env_fn(i) for i in range(all_args.n_rollout_threads)])
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 263, in __init__
+    observation_space, action_space = self.remotes[0].recv().x
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\connection.py", line 321, in _recv_bytes
+    raise EOFError
+EOFError
+Process Process-4:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-5:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-6:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-7:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-8:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-9:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-10:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-12:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-11:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-13:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-15:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-14:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-16:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-17:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-18:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-19:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-20:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-21:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-22:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-23:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-25:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-24:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-26:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-27:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-28:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-29:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-30:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-31:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+Process Process-32:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda\envs\lag_env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in worker
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\env_wrappers.py", line 207, in <listcomp>
+    envs = [env_fn_wrapper() for env_fn_wrapper in env_fn_wrappers.x]
+  File "train/train_jsbsim.py", line 24, in init_env
+    env = SingleCombatEnv(all_args.scenario_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\singlecombat_env.py", line 13, in __init__
+    super().__init__(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\envs\env_base.py", line 26, in __init__
+    self.config = parse_config(config_name)
+  File "D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\utils.py", line 17, in parse_config
+    assert os.path.exists(filepath), \
+AssertionError: config path D:\JSBSIM\LAG-master\LAG-master\envs\JSBSim\utils\..\configs\1v1/ShootMissile/vsBaseline.yaml does not exist. Please pass in a string that represents the file path to the config yaml.
+wandb:
+wandb: 🚀 View run v3_seed1 at: https://wandb.ai/635067877-xidian-university/SingleCombat/runs/cwy3pj96
+wandb: Find logs at: results\SingleCombat\1v1\ShootMissile\vsBaseline\ppo\v3\wandb\run-20260410_125606-cwy3pj96\logs
